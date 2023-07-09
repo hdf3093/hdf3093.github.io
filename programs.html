@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programs</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16">
+
+</head>
+<header>
+    <h1 id="name"><a href="index.html">Hannah Foppoli Hernandez</a></h1>
+    <nav>
+
+         <ul>
+            <li class="nav-item"><a href="programs.html">programs</a></li>
+            <li class="nav-item"><a href="robotics.html">robotics</a></li>
+            <li class="nav-item"><a href="writing.html">writing</a></li>
+            <li class="nav-item"><a href="misc.html">misc</a></li>
+            <li class="nav-item"><a href="contact.html">contact me</a></li>
+
+          </ul>
+
+    </nav>
+
+    
+</header>
+<body>
+
+    <div id="project1">
+        <img src="images/loginscreen.png" srcset="images/loginscreen-2x.png 2x" height="300" width="auto" alt="run 1 of program, login">
+        <img src="images/strike.png" srcset="images/strike2x.png 2x" height="300" width="auto" alt="run 2 of program, strike">
+    </div>
+    <div id="projectText">
+        <p><strong>File I/O: Death Star Database
+        </strong> <br> <br>This Python program involves creating a login and access control system for the Death Star super-weapon. Users are required to register with their usernames and passwords, which are verified against a file called names_and_ranks.txt containing the names and ranks of all individuals on board the Death Star. The code also stores user information in a separate file. Once logged in, users can order a strike, cancel a strike, or mark a strike as completed based on their rank. The access controls are based on a hierarchy of ranks from lowest to highest.
+        <br> <br> The technical functions within the code include opening the names_and_ranks.txt file, parsing the data to create a dictionary with names and ranks, prompting the user to register, verifying user eligibility and registration status, prompting the user to login, verifying the user's credentials, and providing access to different functions based on the user's rank. The code also includes various helper functions to handle different types of actions and return the list of actions that a rank can do. The strike information is stored in a separate file, and the program automatically deletes strike information when a strike is marked as completed.
+        </p>
+    </div>
+
+    <div id="project2">
+        <img src="images/chancellor.png" srcset="images/chancellor2x.png 2x" height="500" width="auto" alt="run 1 of program, file i/o">
+        <img src="images/chancellor2.png"  srcset="images/chancellor2-2x.png 2x" height="500" width="auto" alt="run 2 of program, report">
+    </div>
+    <div id="projectText">
+        <p><strong>File I/O: Investigating a Chancellor
+        </strong> <br> <br>This Python program involves analyzing a set of 10,000 text files related to a former chancellor who may have illegally removed classified documents from her former office. The task is to analyze the files and produce a report for Republic Intelligence with the distribution of the files based on their classification level, year of publication, authors, and topics.
+
+        <br> <br> In the first part of the program, the task is to write a program that reads all the documents, determines the distribution of the classifications of the files found, and outputs the counts to a file called norida_files_report.txt. The report should include the total number of documents for each classification level, and the order of the classification level should be from lowest to highest. The code prints out a header for the report and defines a list of the four possible classification levels. It then reads the contents of each file and counts the number of files for each classification level. The code outputs the counts to a file called norida_files_report.txt.<br> <br> The second part of the program involves adding additional functionality to the program from part A, which re-opens the same file and adds information about the years of publication. The third part adds information about the topics, and the fourth part adds information about the authors. The report generated at the end of the assignment includes all of this information.
+
+        </p>
+    </div>
+
+    <div id="projectcolumn">
+        <img src="images/spock.png" srcset="images/spock2x.png 2x" height="200" width="auto" alt="rock,paper,scissors, or spock game against computer">
+    </div>
+    <div id="projectText">
+        <p><strong>Rock, Paper, Scissors, Lizard, Spock 
+        </strong> <br> <br>A fully functional game in Python: allows user to play a a “tournament” of games versus the computer, announcing in consecutive “rounds” the current score, number of ties, longest winning streak, and game summary once all rounds have been iterated over.
+        <br> <br> 
+
+        </p>
+    </div>
+
+    <div id="projectcolumn">
+        <img src="images/redleader.png" srcset="images/redleader2x.png 2x"  height="500" width="auto" alt="pilot test report">
+    </div>
+    <div id="projectText">
+        <p><strong>Red Leader, Ready 
+        </strong> <br> <br>A Python program to track and rate pilot test performance. Grouped into “cohorts”, trained in certain activities depending on user input with a “drop lowest score” option, iterating over each pilot and their individual scores of each activity converted to letter grades, and a final cohort report.		
+        <br> <br> 
+
+        </p>
+    </div>
+
+    <div id="projectcolumn">
+        <img src="images/roll.png" srcset="images/roll2x.png 2x" height="500" width="auto"alt="roll the dice program">
+    </div>
+    <div id="projectText">
+        <p><strong>Roll the Dice
+        </strong> <br> <br>A Python program that allows user to pick the number of sides on a die and continuously roll while announcing each classification until finally reaching a “Three-Eyed-Snake” roll (1-1-1) & generating an overall report with each classification average.
+
+        <br> <br> 
+
+        </p>
+    </div>
+    <footer id="footer">
+        <div id="footerImgs">
+            <img src="images/greenStar.png" height="25px" width="25px" alt="greenStar">        
+            <p onclick="lastUpdated()" id="clickDate">last updated (click me)</p>
+          <p id="date1"></p><p>site is always in progress ~</p>
+            <img src="images/greenStar.png" height="25px" width="25px" alt="greenStar">        
+
+        </div>
+   </footer>
+    
+</body>
+<script src="scripts.js"></script>
+
+
+</html>
