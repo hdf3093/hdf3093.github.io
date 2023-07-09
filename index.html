@@ -1,1 +1,116 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hannah Foppoli Hernandez </title>
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="scripts.js"></script>
+    
+</head>
+
+<main>
+    <header>
+        <h1 id="name"><a href="index.html">Hannah Foppoli Hernandez</a></h1>
+        <nav>
+
+             <ul>
+                <li class="nav-item"><a href="programs.html">programs</a></li>
+                <li class="nav-item"><a href="robotics.html">robotics</a></li>
+                <li class="nav-item"><a href="writing.html">writing</a></li>
+                <li class="nav-item"><a href="misc.html">misc</a></li>
+                <li class="nav-item"><a href="contact.html">contact me</a></li>
+
+              </ul>
+
+        </nav>
+
+        
+    </header>
+
+<body>
+
+    <div id="hometext">
+        <p>I’m based in Brooklyn, New York and a second-semester sophomore at New York University. I’m an interdisciplinary student studying computer programming, humane technology design, robotics, and artificial intelligence. I am also learning Japanese in preparation for my semester-long studies at Waseda University in Tokyo, Japan, where I will be studying computer science and communications engineering at the Faculty of Science and Engineering. I’ve been fascinated with language acquisition and human linguistics since I’ve existed; I’m originally from Buenos Aires, Argentina and was raised speaking Spanish and English natively thanks to my language-loving parents who both studied to become English teachers in Argentina. I also am interested in surveillance capitalism, learning new softwares, and design.
+        </p>
+        <p>Whether technological or natural, language, in its endless fruition and perpetuation, is persistently fascinating. I’ve enjoyed what I have been able to focus on greatly. My intention in creating this working index is to publish/archive/come-back-to my projects and musings, on the web.
+        </p>
+    </div>
+
+    <div >
+        <img id="homeImg" src="images/breadboard.jpeg" srcset="images/breadboard-2x.jpg 2x" height="300" width="auto" alt="breadboard" onclick="changeText()">
+    </div>
+
+
+
+        <div id="coursesContainer">
+            <div id="courses1">
+                <p id="coursesTitle"><strong>Current Courses at New York University</strong></p>
+                <button type="button" onclick='document.getElementById("coursesTitle").innerHTML = "<strong>Current Courses at New York University</strong>"; document.getElementById("currentCourses").style.display = "block"'>Click me to see!</button>
+                <div id="currentCourses" style="display:none">
+                    <p>Database Design & Implementation </p>
+                    <p>Elementary Japanese II</p>
+                    <p>Javascript II</p>
+                    <p>Being Digital: How the Internet Works and Why it is Important</p>
+                  </div>
+                  
+              </div>
+    
+            
+              <div id="courses2">
+                <p id="archiveTitle"><strong>Course Archive</strong></p>
+                <button type="button" onclick='document.getElementById("archiveTitle").innerHTML = "<strong>Course Archive</strong>"; document.getElementById("archiveCourses").style.display = "block"'>Click me to see!</button>
+                <div id="archiveCourses" style="display:none">
+                    <p><strong><em>Spring 2023</em></strong></p>
+                    <p>How Human? Robots, Cyborgs, and Artificial Intelligence </p>
+                    <p>Elementary Japanese I</p>
+                    <p>Introduction to Web Design and Computer Principles</p>
+                    <p><strong><em>Fall 2022</em></strong></p>
+                    <p>Introduction to Computer Programming (Python)<br> </p>
+                    <p>The Communication Revolution<br></p>
+                    <p>Research Seminar: The Politics of Work<br></p>
+                    <p>What Really Matters? Leadership With No Regrets<br> <br></p>
+                  </div>
+              </div>
+
+            
+        </div>
+
+
+       
+          
+       
+          
+
+
+    
+  </div>
+
+
+
+
+    <footer id="footer">
+        <div id="footerImgs">
+            <img src="images/greenStar.png" height="25px" width="25px" alt="greenStar">        
+            <p onclick="lastUpdated()" id="clickDate">last updated (click me)</p>
+          <p id="date1"></p><p>site is always in progress ~</p>
+            <img src="images/greenStar.png" height="25px" width="25px" alt="greenStar">        
+
+        </div>
+   </footer>
+
+
+
+
+
+   </body>
+
+
+
+
+
+</main>
+<script src="scripts.js"></script>
+</html>
