@@ -1,0 +1,439 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@font-face {
+    font-family:AlteHaasGroteskRegular, sans-serif;
+    src: url(font/alte_haas_grotesk/AlteHaasGroteskRegular.ttf);
+  }
+
+  @font-face {
+    font-family:AlteHaasGroteskbold, sans-serif;
+    src: url(font/alte_haas_grotesk/AlteHaasGroteskBold.ttf);
+    font-weight: bold;
+
+  }
+
+
+  @media (max-width: 768px) {
+
+    #project{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center; */
+    }
+  
+    ul {
+      padding: 0;
+      font-size: 14px;
+    }
+  
+    #form {
+      padding: 0;
+    }
+  
+    .text1, .text2{
+      font-size: 14px;
+      padding:0;
+    }
+  
+    footer {
+      margin-top: 2em;
+      border-top: 6px solid #13EB00;
+      padding: 0;
+    }
+  
+    #project {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+    }
+  
+    #project1, #project2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding:0;
+    }
+  
+    #projectcolumn {
+      margin-top: 2em;
+      padding: 0;
+    }
+  
+    #footerImgs {
+      font-size: 0.8em;
+    }
+  
+    #name a {
+      padding: 0.5em;
+    }
+  
+    #courseList {
+      font-size: 1em;
+    }
+  
+    h1 {
+      font-size: 1.5em;
+    }
+  
+    h2 {
+      font-size: 1.2em;
+    }
+  
+    p {
+      padding: 0;
+      font-size: 1em;
+    }
+  
+    #homeImage {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 0;
+      font-size: 12px;
+    }
+  
+  }
+
+  #coursesContainer{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    padding: .2em;
+    padding-bottom: 2em;
+    text-align: center;
+  }
+
+  
+
+
+
+ul {
+    list-style-type: none;
+    display:flex;
+    justify-content: center;
+    padding: .2em;
+}
+
+#form{
+    padding-bottom: 1em;
+    padding-top: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+ 
+
+.text1, .text2 {
+    margin-bottom: 0; 
+    font-size: 18px;
+}
+
+.new-text1, .new-text2 {
+    margin-bottom: 0; 
+    font-size: 18px;
+}
+
+p{
+    padding:0;
+    font-size: 18px;
+
+}
+
+
+footer{
+    margin-top:3em;
+    min-width:100%;
+    position: absolute;
+    bottom:0;
+    left:0;
+    border-top: 8px solid #13EB00;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#project{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: auto;
+    justify-content: center;
+    align-items: center;
+    padding-left: 12em;
+    
+}
+#writing{
+    display: flex;
+    justify-content: center;
+}
+#writing3{
+    display: flex;
+    justify-content: center;
+    gap:60px;
+}
+
+#writing3 a:hover{
+background-color: white;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.85;
+  transition: 0.3s;
+}
+
+#writing2{
+    text-align: center;
+    
+}
+    
+#project1{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:50px;
+    
+}
+#projectText{
+    text-align: center;
+}
+#project2{
+   
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:50px;
+
+
+
+}
+#projectcolumn{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+body{
+    
+    margin:0 auto;
+    padding-left: 0px;
+    padding-right: 0px;
+    position: relative;
+    padding-bottom: 100px;
+    
+
+}
+
+
+
+#footerImgs{
+    font-size: .7em;
+    display: flex;
+    justify-content: center;
+}
+
+#footer p{
+    font-size: 1.2em;
+    font-family: AlteHaasGroteskRegular, sans-serif;
+
+}
+
+#clickDate{
+    cursor: pointer;
+}
+
+ul .nav-item{
+    font-family: AlteHaasGroteskRegular, sans-serif;
+    font-size: 1.48em;
+    padding-left:1.2em;
+    padding-right:1.2em;
+    padding-top:.5em;
+
+}
+#name a{
+    color:black;
+}
+#name a:hover{
+    background-color:#13EB00;
+}
+
+
+a{
+    color:#13EB00;
+    text-decoration: none;
+
+}
+a:hover{
+    opacity: 3;
+    cursor: crosshair;
+    background-color: rgba(0, 0, 0, 0.719);
+    text-decoration: none
+
+}
+a:visited{
+    color:#13EB00;
+    text-decoration: none;
+
+}
+a:active{
+    color: #0C6107;
+
+}
+
+
+#courseList{
+    font-family: AlteHaasGroteskRegular, sans-serif;
+    font-size: 1.2em;
+    padding-left:1.2em;
+    padding-right:1.2em;
+    padding-top:.5em;
+
+
+}
+
+h1{
+    font-family: AlteHaasGroteskRegular, sans-serif;
+    font-size: 2em;
+    text-align: center;
+     padding-top: .2em; 
+
+}
+h2{
+    font-family: AlteHaasGroteskRegular, sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+
+}
+
+
+
+@media ( max-width: 480px){
+        p {
+        font-family: AlteHaasGroteskRegular, sans-serif;
+        font-size: .8em;
+        padding: 1.4em;
+        }
+
+        ul {
+            flex-wrap: wrap;
+            justify-content: center;
+          }
+          ul li {
+            text-align: center;
+            padding: 0.5em;
+          }
+          ul li a {
+            font-size: .9em;
+          }
+
+          img {
+            max-width: 90%;
+            height: auto;
+
+          }
+
+        
+
+          #footerImgs {
+            width: auto;
+            height:50px;
+            font-size: .5em;
+            padding-bottom: 30px;
+            text-align: center;
+            
+          }
+          #homeImg{
+            display: flex;
+            justify-content: center;
+            margin:0 auto;
+        }
+
+        
+
+
+        }
+        
+  
+  
+  
+  @media (min-width: 768px) {
+    p {
+        font-family: AlteHaasGroteskRegular, sans-serif;
+        font-size: .9em;
+        padding-left: 6em;
+        padding-right: 6em;
+        padding-top: 20px;
+    }
+
+    #footerImgs {
+        width: auto;
+        font-size: .6em;
+        padding-top: 20px;
+        text-align: center;
+        padding-bottom: 20px;
+
+  }
+
+  .video-element {
+    height: auto;
+    object-fit: cover;
+    max-width: 30%;
+    height:auto;
+
+  }
+
+  
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+    .video-element {
+      width: 50%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+  
+
+  @media (min-width: 1440px) {
+    .video-element {
+      width: 800px;
+      height: 600px;
+      object-fit: cover;
+    }
+  }
+  
+
+#homeImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0 auto;
+    height: 500px;
+    padding-bottom: 30px;
+
+
+
+}
+
+img{
+    padding-top:2em;
+
+}
+
+
+.video-element {
+    width: 70%;
+    height: auto;
+    object-fit: cover;
+  }
+
+

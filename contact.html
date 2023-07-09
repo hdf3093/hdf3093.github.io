@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16">
+    <style>
+        
+        #item{
+            font-size: 0.9em;
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: .7em;
+            margin-top: .5em;
+
+        }
+        input[type="text"]{
+            font-family: AlteHaasGroteskRegular, sans-serif;
+        }
+        textarea{
+            caret-color: #13EB00;
+        }
+
+        input{
+            caret-color: #13EB00;
+
+        }
+
+
+        
+
+        form{
+
+            width: 600px;
+            background-color: lightgray;
+            border: 1px solid black;
+            padding: 10px;
+            border-radius: 20px;
+            box-shadow: 50px 30px #6bfc5ec6;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+        #submit-button {
+            margin-top:20px;
+            display: flex;
+            align-self: flex-end;
+            margin-top: 10px;
+            width:100px;
+            justify-content: center;
+
+        }
+        
+        #footer{
+            margin-top:1em;
+        }
+
+        #message{
+            display: flex;
+            width: 100%;
+            box-sizing: border-box;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            font-family: Arial, sans-serif;
+            font-size: 0.9em;
+            font-family: AlteHaasGroteskRegular, sans-serif;
+
+
+
+            
+        }
+    </style>
+   
+</head>
+<header>
+    <h1 id="name"><a href="index.html">Hannah Foppoli Hernandez</a></h1>
+    <nav>
+
+         <ul>
+            <li class="nav-item"><a href="programs.html">programs</a></li>
+            <li class="nav-item"><a href="robotics.html">robotics</a></li>
+            <li class="nav-item"><a href="writing.html">writing</a></li>
+            <li class="nav-item"><a href="misc.html">misc</a></li>
+            <li class="nav-item"><a href="contact.html">contact me</a></li>
+
+          </ul>
+
+    </nav>
+
+    
+</header>
+
+<main>
+    <body>
+        <div id="form">
+            <form action="https://formspree.io/f/xrgvrwde"method="POST">
+                <p id="q"> First Name: <input id="item" type="text" name="first-name" required ></p>
+                <p id="q">Last Name: <input id="item" type="text" name="last-name" required ></p>
+                <p id="q">Email: <input id="item" type="email" name="email" required></p>
+                <p id="q">Message: <textarea id="message" name="message" rows="3" cols="60" placeholder="Enter your message here!" required></textarea></p>
+                
+
+                
+                <button id="submit-button"type="submit">Send!</button>
+
+        </div>
+
+        <br>
+        <br>
+
+        <footer id="footer">
+            <div id="footerImgs">
+                <img src="images/greenStar.png" height="25px" width="25px" alt="greenStar">        
+                <p onclick="lastUpdated()" id="clickDate">last updated (click me)</p>
+              <p id="date1"></p><p>site is always in progress ~</p>
+                <img src="images/greenStar.png" height="25px" width="25px" alt="greenStar">        
+    
+            </div>
+       </footer>
+ </body>
+ <script src="scripts.js"></script>
+
+</html>
