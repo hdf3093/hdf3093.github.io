@@ -7,7 +7,37 @@
     <title>Writing</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="icon" type="image/png" href="https://github.com/hdf3093/hdf3093.github.io/blob/main/images/favicon-16x16.png?raw=true" sizes="16x16">
+    <style>
+        #writing2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
 
+        #writing2 img {
+            display: none;
+            width: 70%;
+            height: auto;
+        }
+
+        /* Animation styles */
+        .fade-in {
+            animation-name: fadeIn;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Additional styles to control the slideshow appearance */
+        #writing2 .active {
+            display: block;
+        }
+    </style>
 
 </head>
 <header>
@@ -28,35 +58,55 @@
     
 </header>
 <body>
+
+    <h2 id="subheader">Magazine Writing // Editorial Work</h2>
+
     <div id="writing3">
         <a href="https://issuu.com/blushmagfit/docs/icon_issue_blush_2022_issuu" target="_blank"><img src="writing/ssBlush/ss cover.png"srcset="writing/ssBlush/ss cover2x.png 2x" height="500" width="auto" ></a>
         <a href="https://issuu.com/blushmagfit/docs/therealissue" target="_blank"><img src="writing/fwBlush/cover.png"srcset="writing/fwBlush/cover2x.png 2x" height="500" width="auto"></a>
     </div>
 
     <div id="projectText">
-        <p><strong><em>Blush Magazine</em> S/S 2022, F/W 2021</strong> <br> <br> For <em>Blush</em> S/S 2022, I was the Senior Culture Editor and worked closely with the seven writers I oversaw. Increased editorial productivity of a team of 7 editors by 80% in the first 3 months by creating and enacting an organized meeting structure and consistent cadence of team and 1:1 meetings. Strategically collaborated closely with Editor-In-Chief, managing editor and graphics team to ensure magazine content quality and timelines goals were achieved consistently. <br> <br> I wrote a piece called <em>The Mirrored Threat</em>, which you can read below by scrolling and above by clicking the left image.<br><br> For <em>Blush</em> F/W 2021, I wrote a piece called <em>Do You</em>.
+        <p><strong><em>Blush Magazine</em> S/S 2022, F/W 2021</strong> <br> <br> For <em>Blush</em> S/S 2022, I was the Senior Culture Editor and worked closely with the seven writers I oversaw. I increased editorial productivity of a team of 7 editors by 80% in the first 3 months by creating and enacting an organized meeting structure and consistent cadence of team and 1:1 meetings. I strategically collaborated closely with Editor-In-Chief, managing editor and graphics team to ensure magazine content quality and timelines goals were achieved consistently. <br> <br> For <em>Blush</em> S/S '22, I wrote a piece called <em>The Mirrored Threat</em>, which you can read above by clicking the left image. Take a look below for the stunning hard work of the creative teams, including graphics, editing, photography, styling, and so much more. For <em>Blush</em> F/W 2021, I wrote a piece called <em>Do You</em>.
         </p>
     </div>
 
 
 
     <div id="writing2">
-        <img src="writing/ssBlush/ss blush.png" srcset="writing/ssBlush/ss blush2x.png 2x" height="700" width="auto" alt="blush ss 2022 cover">
-       <img src="writing/ssBlush/mirroredThreat/cover.png" srcset="writing/ssBlush/mirroredThreat/cover2x.png 2x" height="600" width="auto" alt="the mirrored threat cover">
+        <img src="writing/ssBlush/ss blush.png" srcset="writing/ssBlush/ss blush2x.png 2x" height="700" width="auto" alt="blush ss 2022 cover" class="active">
+        <img src="writing/ssBlush/mirroredThreat/cover.png" srcset="writing/ssBlush/mirroredThreat/cover2x.png 2x" height="600" width="auto" alt="the mirrored threat cover">
         <img src="writing/ssBlush/mirroredThreat/1.png" srcset="writing/ssBlush/mirroredThreat/1-2x.png 2x"  height="600" width="auto" alt="the mirrored threat page 1">
         <img src="writing/ssBlush/mirroredThreat/2.png" srcset="writing/ssBlush/mirroredThreat/2-2x.png 2x" height="600" width="auto" alt="the mirrored threat page 2">
         <img src="writing/ssBlush/mirroredThreat/3.png"  srcset="writing/ssBlush/mirroredThreat/3-2x.png 2x" height="600" width="auto" alt="the mirrored threat page 3">
-        <img src="writing/ssBlush/mirroredThreat/4.png"  srcset="writing/ssBlush/mirroredThreat/4-2x.png 2x" height="600" width="auto"alt="the mirrored threat page 4">
+        <img src="writing/ssBlush/mirroredThreat/4.png"  srcset="writing/ssBlush/mirroredThreat/4-2x.png 2x" height="600" width="auto" alt="the mirrored threat page 4">
     </div>
 
     <br>
     <br>
+
+    <h2 id="subheader">Academic Writing // Long-Form</h2>
+
+
+    <div id="projectText">
+        <p><strong>How Human? Flesh and Hardware as True Collaborators <br>Donna Haraway, <em>The Defecating Duck</em>, and <em>Human-Machine Reconfigurations </em>(May '23)
+        </strong> <br> <br>"Insofar as we are still, in discussions of modern technologies from robotics to cloning, redrawing the same boundary and reevaluating its implications for the nature of life, work, and thought, we are continuing a project whose rudiments were established two and a half centuries ago by the defecating Duck that didn’t.” <br><br><em>--The Defecating Duck, or, the Ambiguous Origins of Artificial Life</em>, Jessica Riskin</p>
+    </div>
+
+    <div id="writing">
+        <object data="writing/HowHumanFinalUpdatedName.pdf" type="application/pdf" width="50%" height="800px">
+        <p>It appears you don't have a PDF plugin for this browser.
+         No biggie... you can <a href="writing/HowHumanFinalUpdatedName.pdf">click here to
+         download the PDF file.</a></p>
+        </object>
+    </div>
     
 
-   
+    
+
     <div id="projectText">
-        <p><strong>The Internet as Playground and Plant: <br>The Factory of Digital Voyeurism
-            A Foucauldian and Marxian Perspective on Free Digital Labor
+        <p><strong>The Internet as Playground and Plant: <br>The Factory of Digital Voyeurism 
+            A Foucauldian and Marxian Perspective on Free Digital Labor (December '22)
         </strong> <br> <br>A paper I wrote for my research seminar, The Politics of Work.</p>
 
         </p>
@@ -74,7 +124,7 @@
     <br>
     <br>
     <div id="projectText">
-        <p><strong><em>Humanitech</em> <br> A Future World Project
+        <p><strong><em>Humanitech</em> <br> A Future World Project (December '22)
         </strong> <br> <br>A thoughtful exploration of how our world could operate through an Internet we've never known before.</p>
 
         </p>
@@ -91,8 +141,8 @@
     <br>
     <br>
     <div id="projectText">
-        <p><strong>A Conversation With AI on AI <br> How Human? Midterm Paper
-        </strong> <br> <br></p>
+        <p><strong>A Conversation With AI on AI (March '23) </strong><br> How Human? Midterm Paper 
+        <br> <br></p>
 
         </p>
     </div>
@@ -133,6 +183,27 @@
     
 </body>
 <script src="scripts.js"></script>
+<script>
+    var images = Array.from(document.querySelectorAll("#writing2 img"));
+    var currentIndex = 0;
+
+    function showSlide(index) {
+        images.forEach(function(img) {
+            img.classList.remove("active");
+        });
+        images[index].classList.add("active");
+    }
+
+    function nextSlide() {
+        currentIndex++;
+        if (currentIndex >= images.length) {
+            currentIndex = 0;
+        }
+        showSlide(currentIndex);
+    }
+
+    setInterval(nextSlide, 2000); 
+</script>
 
 
 </html>

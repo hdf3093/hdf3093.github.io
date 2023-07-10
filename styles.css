@@ -184,7 +184,8 @@ background-color: white;
   font-size: 16px;
   margin: 4px 2px;
   opacity: 0.85;
-  transition: 0.3s;
+  transition: 0.5s;
+
 }
 
 #writing2{
@@ -202,6 +203,10 @@ background-color: white;
 }
 #projectText{
     text-align: center;
+    max-width: 67%;
+    margin: 0 auto;
+    line-height: 1.5;
+
 }
 #project2{
    
@@ -248,7 +253,7 @@ body{
 }
 
 #clickDate{
-    cursor: pointer;
+    cursor: crosshair;
 }
 
 ul .nav-item{
@@ -264,6 +269,7 @@ ul .nav-item{
 }
 #name a:hover{
     background-color:#13EB00;
+    text-decoration: underline wavy;
 }
 
 
@@ -272,11 +278,27 @@ a{
     text-decoration: none;
 
 }
+
+#subheader{
+  color:#000000;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+
+
+#subheader:hover {
+  opacity: 0.78;
+  text-decoration: underline wavy;
+  transition: 0.5s;
+  cursor: crosshair;
+
+}
 a:hover{
     opacity: 3;
     cursor: crosshair;
     background-color: rgba(0, 0, 0, 0.719);
-    text-decoration: none
+    text-decoration: none;
 
 }
 a:visited{
