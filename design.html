@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hannah Foppoli Hernandez </title>
+    
+    <link rel="icon" type="image/png" href="https://github.com/hdf3093/hdf3093.github.io/blob/main/images/favicon-16x16.png?raw=true" sizes="16x16">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="scripts.js"></script>
+    <style>
+        #writing2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        #writing2 img {
+            display: none;
+            width: 70%;
+            height: auto;
+        }
+
+        /* Animation styles */
+        .fade-in {
+            animation-name: fadeIn;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Additional styles to control the slideshow appearance */
+        #writing2 .active {
+            display: block;
+        }
+    </style>
+    
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EKGPY1D36N"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EKGPY1D36N');
+</script>
+
+<main>
+    <header>
+        <h1 id="name"><a href="index.html">Hannah Foppoli Hernandez</a></h1>
+        <nav>
+
+             <ul>
+                <li class="nav-item"><a href="programs.html">programs</a></li>
+                <li class="nav-item"><a href="robotics.html">robotics</a></li>
+                <li class="nav-item"><a href="design.html">design</a></li>
+                <li class="nav-item"><a href="writing.html">writing</a></li>
+                <li class="nav-item"><a href="misc.html">misc</a></li>
+                <li class="nav-item"><a href="contact.html">contact me</a></li>
+
+              </ul>
+
+        </nav>
+
+        
+    </header>
+
+<body>
+    <h2 id="subheader">3D Design // Blender</h2>
+
+    <div id="projectText">
+        <p id="raman"><strong>Raman Spectrometer Shield Keychain</strong><br><br><strong>Reimagining Wearable Technology as a Tool for Synthetic Opioid Detection</strong>
+        </p>
+    </div>
+    <div id="writing2">
+        <img src="design/shield/white5.png" height="600" width="auto" alt="shield keychain, all in sort of orthographic view" class="active">
+        <img src="design/shield/boom.png" height="700" width="auto" alt="shield keychain, allangled outside">
+        <img src="design/shield/untitled3.png" height="600" width="auto" alt="shield keychain,singular pink version">
+        <img src="design/shield/boom2.png" height="600" width="auto" alt="shield keychain, all in inside view">
+    </div>
+
+    <div id="projectText">
+        <p>a handheld, user-friendly Raman spectrometer utilizing Raspberry Pi to instantly test pills and substances for fentanyl & other synthetic opioids. Raman spectroscopy, requiring only a small sample, uses laser light to analyze compounds, a non-harmful method that penetrates through substances, enabling their detection without damage and produces a distinctive spectral signature. This unique signature is then cross-referenced against an online database, hosted on a Raspberry Pi, and contains reference spectra of known substances. Employing a matching algorithm, the spectrometer identifies synthetic opioids by detecting resemblances between the spectral signature of the unidentified substance and those archived in the database. When a close match is established, the spectrometer confirms the presence of the synthetic opioid and promptly displays the result on its screen, providing a swift and precise drug detection method. 
+        </p>
+        <p>i’m heavily inspired by the work of fl@c@’s “ramanPi”, the fifth prize winner of the 2014 Hacakaday prize in Munich, who 3D printed parts of the spectrometer and hosted it through a Raspberry Pi. i intend on building upon their framework laid nearly a decade ago, a catalyst for strides towards accessible, open-source, ‘DIY’ Raman spectroscopy. 
+        this project is highly experimental—a technological attempt at a solution to the epidemic of synthetically-laced, counterfeit drugs after the loss of my own older brother. entangled in grief, throughout periods of stagnancy and bursts of motivation, this project has been on my mind for several months. 
+        </p>
+        <p>as of today, Raman spectrometers continue to be incredibly expensive, found only in chemistry labs, for forensic and narcotic analysis, etc, hence the experimental aspect of this project. although accessibility is arguably the most important aspect of this project to actually work and for everyday people to utilize this technology, a wearable Raman spectrometer has yet to be made, ever.  in this way, this project is another step towards the intersection of science and wearable technologies as preventative, life-saving tools. 
+        </p>
+
+    </div>
+
+
+
+
+
+
+
+    <footer id="footer">
+        <div id="footerImgs">
+            <img src="images/greenStar.png" height="25px" width="25px" alt="greenStar">        
+            <p onclick="lastUpdated()" id="clickDate">last updated (click me)</p>
+          <p id="date1"></p><p>site is always in progress ~</p>
+            <img src="images/greenStar.png" height="25px" width="25px" alt="greenStar">        
+
+        </div>
+   </footer>
+</body>
+
+<script src="scripts.js"></script>
+<script>
+    var images = Array.from(document.querySelectorAll("#writing2 img"));
+    var currentIndex = 0;
+
+    function showSlide(index) {
+        images.forEach(function(img) {
+            img.classList.remove("active");
+        });
+        images[index].classList.add("active");
+    }
+
+    function nextSlide() {
+        currentIndex++;
+        if (currentIndex >= images.length) {
+            currentIndex = 0;
+        }
+        showSlide(currentIndex);
+    }
+
+    setInterval(nextSlide, 2000); 
+</script>
+</html>
