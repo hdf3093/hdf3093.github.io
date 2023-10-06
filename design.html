@@ -23,6 +23,21 @@
             height: auto;
         }
 
+        #noslide {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        #noslide img{
+            display: flex;
+            justify-content: center;
+            width: 50%;
+            height: auto;
+
+        }
+
         /* Animation styles */
         .fade-in {
             animation-name: fadeIn;
@@ -93,13 +108,31 @@
         this project is highly experimental—a technological attempt at a solution to the epidemic of synthetically-laced, counterfeit drugs after the loss of my own older brother. entangled in grief, throughout periods of stagnancy and bursts of motivation, this project has been on my mind for several months. 
         </p>
         <p>as of today, Raman spectrometers continue to be incredibly expensive, found only in chemistry labs, for forensic and narcotic analysis, etc, hence the experimental aspect of this project. although accessibility is arguably the most important aspect of this project to actually work and for everyday people to utilize this technology, a wearable Raman spectrometer has yet to be made, ever.  in this way, this project is another step towards the intersection of science and wearable technologies as preventative, life-saving tools. 
-        </p>
+        </p> <br>
 
     </div>
 
 
+    <div id="projectText">
+        <p id="subheader"><strong>Apple Vision Pro with Metal Attachments</strong><br><strong></strong>
+        </p>
+    </div>
+    <div id="noslide">
+        <img src="applevision/5.png" height="100" width="auto" alt="apple vision pro w/ metal attachment, front view" class="active">
+        <img src="applevision/6.png" height="100" width="auto" alt="apple vision pro w/ metal attachment, back view">
 
+    </div>
 
+    <div id="projectText">
+        <p id="subheader"><strong>Abstract Bone Structure, 2 Hearts</strong><br><strong></strong>
+        </p>
+    </div>
+
+    <div id="noslide">
+        <img src="bone/untitled2.png" height="100" width="auto" alt="abstract bone structure">
+        <img src="bone/untitled3.png" height="100" width="auto" alt="abstract bone structure">
+
+    </div>
 
 
 
@@ -135,5 +168,7 @@
     }
 
     setInterval(nextSlide, 2000); 
+
+    
 </script>
 </html>
