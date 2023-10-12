@@ -276,7 +276,6 @@ ul .nav-item{
 }
 #name a:hover{
     background-color:#13EB00;
-    text-decoration: underline wavy;
 }
 
 
@@ -486,7 +485,7 @@ img{
 
 
 .video-element {
-    width: 70%;
+    width: 30%;
     height: auto;
     object-fit: cover;
   }
